@@ -1,6 +1,3 @@
-# dev_command_guide
-개발에 필요한 다양한 명령어 및 단축키들을 정리합니다.
-
 [작업플로우 정리 ]
 >>> 로컬 WSIDFY브랜치에서 작업 후 로컬 dev브랜치랑 병합 진행하고 테스트 및 이상 없으면 원격 dev브랜치에 푸쉬
 
@@ -106,7 +103,7 @@ python -m venv myvenv
 myvenv\Scripts\activate
 
 (가상환경 실행하기 - git bash)
-source myvenv/Scripts/activate
+source .venu/Scripts/activate (폴더명이 .venu)
 
 (가상환경에서 나오기 - 공통)
 deactivate
@@ -119,6 +116,9 @@ which python
 (파일 실행)
 streamlit run app.py
 
+(특정 파일만 실행) - pages폴더의 test.py실행
+cd pages (해당 폴더로 이동)
+streamlit run .test.py (테스트 파일 실행)
 
 [ VS code단축키 모음 ] ================================
 (코드 잡고 통째로 옮기기)

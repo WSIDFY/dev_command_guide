@@ -1,19 +1,24 @@
-[작업플로우 정리 ]
->>> 로컬 WSIDFY브랜치에서 작업 후 로컬 dev브랜치랑 병합 진행하고 테스트 및 이상 없으면 원격 dev브랜치에 푸쉬
+[Tip]
+- 저장할만한 덩어리의 수저사항이 생겼다면 바로바로 commit해서 남겨두기
+- 
 
-1. WSIDFY브랜치로 이동
-git switch WSIDFY
+[작업플로우 정리 ]
+>>> 로컬 A브랜치에서 작업 후 로컬 B브랜치랑 병합 진행하고 테스트 및 이상 없으면 원격 B브랜치에 푸쉬
+
+
+1. A브랜치로 이동
+git switch A
 2. 변경사항 스테이징 및 커밋
 git add .
 git commit -m "작업한 내용에 대한 메시지"
-3. 로컬의 dev브랜치로 이동 및 원격최신 상태와 동기화
-git switch dev
-git pull origin dev (이미 연결 되어있으면 git pull만 진행)
-4. WSIDFY 내용을 dev(로컬)에 merge
-git merge WSIDFY (dev브랜치에서 실행해야함)
+3. 로컬의 B브랜치로 이동 및 원격최신 상태와 동기화
+git switch B
+git pull origin B (이미 연결 되어있으면 git pull만 진행)
+4. A 내용을 B(로컬)에 merge
+git merge A (B브랜치에서 실행해야함)
 (이때 충돌나면 해결 후에 git add . > git commit을 해줘야 병합이 완료됨)
-5. 원격 dev브랜치에 반영
-git push origin dev
+5. 원격 B브랜치에 반영
+git push origin B
 
 
 [깃 명령어 정리] ====================================

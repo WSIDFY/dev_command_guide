@@ -1,4 +1,10 @@
-### [Tip]
+# _Dev_commend_guide_
+
+#### [ 추천 확장 ]
+- `office matrial icon theme` : 파일 및 폴더 아이콘
+- `Better Comments` : 주석에 종류별 색 입히기
+
+#### [Tip]
 > 저장할만한 덩어리의 수저사항이 생겼다면 바로바로 commit해서 남겨두기
 
 ## [ 작업플로우 정리 ]
